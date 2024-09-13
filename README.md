@@ -1,1 +1,1 @@
-It is responsive design of Netflix home page
+It is a responsive design of Netflix home page
