@@ -1,0 +1,140 @@
+.banner{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/de5aa17a-29b6-4167-8c39-834aae8f328e/PK-en-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_8056b691-2a93-40af-add4-ca200ba1151b_large.jpg);
+    background-position: center;
+    height: 700px;
+    background-size: 125% ;
+    z-index: 1;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+.banner::after{
+    content: '';
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+.nav{
+    justify-content: space-between;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 80%;
+}
+.ban-text, .ban-option{
+    z-index: 3;
+}
+.ban-option input{
+    width: 400px;
+}
+.separater{
+    height: 8px;
+    width: 100%;
+    background-color: rgb(35, 35, 35);
+}
+.footer, .footer a{
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.7);
+}
+h2, h1{
+    font-weight: 900;
+}
+.over-mob {
+    background-color: black;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-52%);
+    height: 80px;
+    width: 300px;
+}
+.over-mob div img{
+    height: 60px;
+    width: 50px;
+}
+.over-tv{
+    left: 13.3%;
+    top: 21%;
+    height: 260px;
+    width: 463px;
+}
+.ques{
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+.accordion-flush .accordion-item .accordion-button{
+    background-color: rgb(45, 45, 45);
+    color: white;
+}
+input{
+    background-color: rgba(0, 0, 0, 0);
+    width: 280px;
+    height: 55px;
+    padding: 16px ;
+    color: white;
+}
+
+@media (min-width: 992px){
+    .tag h2{
+        width: 260px;
+    }
+    .tag p{
+        width: 350px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-img{
+        width: 130px !important;
+    }
+    .nav button{
+        padding: 8px 12px !important;
+        font-size: 14px !important;
+        height: 30px !important;
+    }
+    .banner {
+        height: 600px;
+        background-size: cover;
+    }
+    .over-mob {
+        height: 60px;
+        width: 220px;
+        bottom: 10px;
+        transform: translateX(-50%);
+    }
+    .over-mob div img {
+        height: 45px;
+        width: 35px;
+    }
+    .over-mob div {
+        font-size: 0.8rem;
+    }
+    .nav button{
+        font-size: 14px !important;
+        padding: 4px !important;
+        font-weight: 500;
+    }
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .over-mob {
+        transform: translate(-60%, 20%);
+    }
+    .banner {
+        height: 600px;
+        background-size: cover;
+    }
+}
+@media (max-width: 768px) and (min-width: 500px) {
+    .banner {
+        height: 550px;
+        background-size: cover;
+    }
+}
+@media (max-width: 450px){
+    .ban-option input{
+        width: 280px;
+    }
+}
+
